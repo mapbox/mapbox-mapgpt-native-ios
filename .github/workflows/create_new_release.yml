@@ -1,0 +1,29 @@
+name: Create new release
+on:
+  pull_request:
+    types: closed
+
+jobs:
+  create-new-release:
+    if: |
+      github.event.pull_request.merged &&
+      (startsWith(github.head_ref, 'release-v') ||
+      startsWith(github.head_ref, 'release/v')) &&
+      (startsWith(github.base_ref, 'main') ||
+      startsWith(github.base_ref, 'lts/v'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Create release
+        run: |
+          VERSION=$(echo "${GITHUB_HEAD_REF}" | sed -E "s/^release[\/-]//")
+          MARK_PRERELEASE=""
+          if [[ $VERSION == *"-daily-"* ]]; then
+            echo "Do not mark daily releases as latest!"
+            MARK_PRERELEASE="--prerelease --latest=false"
+          fi
+          gh release create $VERSION $MARK_PRERELEASE --notes "Bump to $VERSION" --title "Release-$VERSION" --target "${GITHUB_HEAD_REF}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
