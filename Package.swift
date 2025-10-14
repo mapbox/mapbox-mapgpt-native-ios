@@ -11,7 +11,7 @@ let releaseType = "releases"
 
 let package = Package(
     name: "MapboxMapGpt",
-    platforms: [.iOS(.v12), .macOS(.v10_15), .custom("visionos", versionString: "1.0")],
+    platforms: [.iOS(.v13), .macOS(.v10_15), .custom("visionos", versionString: "1.0")],
     products: [
         .library(name: "MapboxMapGpt", targets: ["MapboxMapGptWrapper"]),
     ],
