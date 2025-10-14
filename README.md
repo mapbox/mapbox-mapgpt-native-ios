@@ -30,6 +30,6 @@ machine api.mapbox.com
 ###### Using SPM Package 📱🖥💻
 
 ```swift
-.package(url: "https://github.com/mapbox/mapbox-mapgpt-ios.git", from: "24.5.1"),
+.package(url: "https://github.com/mapbox/mapbox-mapgpt-native-ios.git", from: "24.15.1"),
 ```
 
