@@ -4,9 +4,9 @@
 import PackageDescription
 import Foundation
 
-let commonVersion : Version = "24.14.0"
-let mapGptVersion = "24.14.0"
-let mapGptChecksum = "84fb0f2fbca4ade96bf3b4a6d00503f7f4ea0471bcf937c8e1d07c1fb6a16c0f"
+let commonVersion : Version = "24.16.0-rc.1"
+let mapGptVersion = "24.16.0-rc.1"
+let mapGptChecksum = "126053f481633d5b6cba77298bba64263bb6a9cc6561d1f258de16d93befff49"
 let releaseType = "releases"
 
 let package = Package(
