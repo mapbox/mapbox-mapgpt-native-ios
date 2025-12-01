@@ -4,10 +4,10 @@
 import PackageDescription
 import Foundation
 
-let commonVersion : Version = "24.14.0"
-let mapGptVersion = "24.14.0"
-let mapGptChecksum = "84fb0f2fbca4ade96bf3b4a6d00503f7f4ea0471bcf937c8e1d07c1fb6a16c0f"
-let releaseType = "releases"
+let commonVersion : Version = "24.18.0-SNAPSHOT-12-01--04-38.git-dbc648e"
+let mapGptVersion = "24.18.0-SNAPSHOT-12-01--04-38.git-dbc648e"
+let mapGptChecksum = "963d321b26cbeccc1a14bfedd3bda637857c24744132e148face5ddd0d92d64e"
+let releaseType = "snapshots"
 
 let package = Package(
     name: "MapboxMapGpt",
