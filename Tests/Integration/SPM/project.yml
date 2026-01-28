@@ -3,8 +3,8 @@ options:
   bundleIdPrefix: com.mapbox.mapGpt.SPM
 packages:
   MapboxMapGpt:
-    url: git@github.com:mapbox/mapbox-mapgpt-ios.git
-    branch: release/v24.14.0
+    url: git@github.com:mapbox/mapbox-mapgpt-native-ios.git
+    branch: release/v23.12.0-alpha.2
 targets:
   SPMTest:
     type: application
