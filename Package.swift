@@ -6,7 +6,7 @@ import Foundation
 
 let commonVersion : Version = "24.22.4"
 let mapGptVersion = "24.22.4"
-let mapGptChecksum = "e9b817eaa71bc3d6f6b0e486d5a914ccf54183602906924fb6713b3d2710208e"
+let mapGptChecksum = "f657aa2b88c9ba95ab924c9c41a39023b20da6f3a48d1c443097518ef60b618b"
 let releaseType = "releases"
 
 let package = Package(
