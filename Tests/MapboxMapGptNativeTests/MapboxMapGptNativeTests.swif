@@ -1,8 +1,8 @@
 import XCTest
-import MapboxMapGpt
+import MapboxMapGptNative
 
 
-final class MapboxMapGptTests: XCTestCase {
+final class MapboxMapGptNativeTests: XCTestCase {
     func testVersion() {
         XCTAssertTrue(ValueConverter.toJson(forValue: 0) == "0")
     }

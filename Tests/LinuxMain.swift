@@ -1,6 +1,6 @@
 import XCTest
-import MapboxMapGpt
+import MapboxMapGptNative
 
 var tests = [XCTestCaseEntry]()
-tests += MapboxMapGpt.allTests()
+tests += MapboxMapGptNative.allTests()
 XCTMain(tests)

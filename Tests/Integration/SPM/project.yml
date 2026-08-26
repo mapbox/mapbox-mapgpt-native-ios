@@ -2,9 +2,9 @@ name: SPMTest
 options:
   bundleIdPrefix: com.mapbox.mapGpt.SPM
 packages:
-  MapboxMapGpt:
-    url: git@github.com:mapbox/mapbox-mapgpt-ios.git
-    branch: release/v24.14.0
+  MapboxMapGptNative:
+    url: git@github.com:mapbox/mapbox-mapgpt-native-ios.git
+    branch: v24.31.0
 targets:
   SPMTest:
     type: application
@@ -13,7 +13,7 @@ targets:
     sources: [Sources]
     dependencies:
       - sdk: libc++.tbd
-      - package: MapboxMapGpt
+      - package: MapboxMapGptNative
     settings:
         DEVELOPMENT_TEAM: "GJZR2MEM28"
         OTHER_LDFLAGS: "-lc++"

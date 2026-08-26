@@ -1,6 +1,6 @@
 # mapbox-mapgpt-ios
 
-MapboxMapGpt provides MapGpt functionality.
+MapboxMapGptNative provides MapGpt functionality.
 
 To learn more please visit the documentation at https://docs.mapbox.com/.
 
