@@ -4,14 +4,14 @@
 import PackageDescription
 import Foundation
 
-let commonVersion : Version = "24.14.0"
-let mapGptVersion = "24.14.0"
-let mapGptChecksum = "84fb0f2fbca4ade96bf3b4a6d00503f7f4ea0471bcf937c8e1d07c1fb6a16c0f"
-let releaseType = "releases"
+let commonVersion : Version = "24.37.0-SNAPSHOT-11-24--13-05.git-efdf8a4"
+let mapGptVersion = "24.37.0-SNAPSHOT-11-24--13-05.git-efdf8a4"
+let mapGptChecksum = "e52acabc5615250daecf26d4fd8f41f9927ef0d2374ce1f7e0fd485e469083f7"
+let releaseType = "snapshots"
 
 let package = Package(
     name: "MapboxMapGptNative",
-    platforms: [.iOS(.v12), .macOS(.v10_15), .custom("visionos", versionString: "1.0")],
+    platforms: [.iOS(.v13), .macOS(.v10_15), .custom("visionos", versionString: "1.0")],
     products: [
         .library(name: "MapboxMapGptNative", targets: ["MapboxMapGptNativeWrapper"]),
     ],
